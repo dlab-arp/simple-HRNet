@@ -1,0 +1,12 @@
+Collecting ffmpeg-python
+  Using cached https://files.pythonhosted.org/packages/d7/0c/56be52741f75bad4dc6555991fabd2e07b432d333da82c11ad701123888a/ffmpeg_python-0.2.0-py3-none-any.whl
+Collecting future
+  Downloading https://files.pythonhosted.org/packages/45/0b/38b06fd9b92dc2b68d58b75f900e97884c45bedd2ff83203d933cf5851c9/future-0.18.2.tar.gz (829kB)
+Building wheels for collected packages: future
+  Building wheel for future (setup.py): started
+  Building wheel for future (setup.py): finished with status 'done'
+  Created wheel for future: filename=future-0.18.2-cp36-none-any.whl size=491063 sha256=f1857dc552be5420df42ccfd03ab301a3817afd1a1faff2ddbad80c652d57755
+  Stored in directory: C:\Users\IYEH5X\AppData\Local\pip\Cache\wheels\8b\99\a0\81daf51dcd359a9377b110a8a886b3895921802d2fc1b2397e
+Successfully built future
+Installing collected packages: future, ffmpeg-python
+Successfully installed ffmpeg-python-0.2.0 future-0.18.2

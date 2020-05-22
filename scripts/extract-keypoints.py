@@ -27,7 +27,7 @@ def main(filename, hrnet_m, hrnet_c, hrnet_j, hrnet_weights, image_resolution, s
 
     image_resolution = ast.literal_eval(image_resolution)
 
-    rotation_code = check_video_rotation(filename)
+    #rotation_code = check_video_rotation(filename)
     video = cv2.VideoCapture(filename)
     assert video.isOpened()
     nof_frames = video.get(cv2.CAP_PROP_FRAME_COUNT)
@@ -66,8 +66,8 @@ def main(filename, hrnet_m, hrnet_c, hrnet_j, hrnet_weights, image_resolution, s
             ret, frame = video.read()
             if not ret:
                 break
-            if rotation_code is not None:
-                frame = cv2.rotate(frame, rotation_code)
+            #if rotation_code is not None:
+                #frame = cv2.rotate(frame, rotation_code)
 
             pts = model.predict(frame)
 

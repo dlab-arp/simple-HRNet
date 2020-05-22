@@ -11,7 +11,7 @@ import numpy as np
 sys.path.insert(1, os.getcwd())
 from SimpleHRNet import SimpleHRNet
 from misc.visualization import draw_points, draw_skeleton, draw_points_and_skeleton, joints_dict, check_video_rotation
-from misc.utils import find_person_id_associations
+from misc.m_utils import find_person_id_associations
 
 def main(camera_id, filename, hrnet_m, hrnet_c, hrnet_j, hrnet_weights, hrnet_joints_set, image_resolution,
          single_person, use_tiny_yolo, disable_tracking, max_batch_size, disable_vidgear, save_video, video_format,
@@ -32,11 +32,11 @@ def main(camera_id, filename, hrnet_m, hrnet_c, hrnet_j, hrnet_weights, hrnet_jo
     video_writer = None
 
     if filename is not None:
-        rotation_code = check_video_rotation(filename)
+        #rotation_code = check_video_rotation(filename)
         video = cv2.VideoCapture(filename)
         assert video.isOpened()
     else:
-        rotation_code = None
+        #rotation_code = None
         if disable_vidgear:
             video = cv2.VideoCapture(camera_id)
             assert video.isOpened()
@@ -80,8 +80,8 @@ def main(camera_id, filename, hrnet_m, hrnet_c, hrnet_j, hrnet_weights, hrnet_jo
             ret, frame = video.read()
             if not ret:
                 break
-            if rotation_code is not None:
-                frame = cv2.rotate(frame, rotation_code)
+            #if rotation_code is not None:
+                #frame = cv2.rotate(frame, rotation_code)
         else:
             frame = video.read()
             if frame is None:
@@ -122,7 +122,7 @@ def main(camera_id, filename, hrnet_m, hrnet_c, hrnet_j, hrnet_weights, hrnet_jo
         print('\rframerate: %f fps' % fps, end='')
 
         if has_display:
-            cv2.imshow('frame.png', frame)
+            #cv2.imshow('frame.png', frame)
             k = cv2.waitKey(1)
             if k == 27:  # Esc button
                 if disable_vidgear:

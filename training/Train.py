@@ -11,7 +11,7 @@ from tqdm import tqdm
 from datasets.HumanPoseEstimation import HumanPoseEstimationDataset
 from losses.loss import JointsMSELoss, JointsOHKMMSELoss
 from misc.checkpoint import save_checkpoint, load_checkpoint
-from misc.utils import flip_tensor, flip_back
+from misc.m_utils import flip_tensor, flip_back
 from misc.visualization import save_images
 from models.hrnet import HRNet
 

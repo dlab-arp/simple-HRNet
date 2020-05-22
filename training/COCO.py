@@ -3,7 +3,7 @@ import torch
 from tqdm import tqdm
 
 from datasets.HumanPoseEstimation import HumanPoseEstimationDataset
-from misc.utils import flip_tensor, flip_back, get_final_preds
+from misc.m_utils import flip_tensor, flip_back, get_final_preds
 from misc.visualization import save_images
 from training.Train import Train
 

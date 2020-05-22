@@ -1,0 +1,3 @@
+
+
+python scripts/extract-keypoints.py -f C:\Users\IYEH5X\UC_PhD\Surya_work\Simple-HRNet\videos\@br_BF_una17_lat.mp4 -w C:\Users\IYEH5X\UC_PhD\Surya_work\Simple-HRNet\weights\pose_hrnet_w48_384x288.pth --single_person

@@ -15,7 +15,7 @@ from tqdm import tqdm
 
 from misc.nms.nms import oks_nms
 from misc.nms.nms import soft_oks_nms
-from misc.utils import fliplr_joints, affine_transform, get_affine_transform, evaluate_pck_accuracy
+from misc.m_utils import fliplr_joints, affine_transform, get_affine_transform, evaluate_pck_accuracy
 from .HumanPoseEstimation import HumanPoseEstimationDataset as Dataset
 
 
